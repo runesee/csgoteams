@@ -1,0 +1,105 @@
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.filter-and-sort {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  gap: 5px;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.label > p {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1em;
+}
+
+.country-select.dropdown {
+  margin-left: 20px;
+}
+
+.dropdown {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: #3e4c54;
+  padding: 5px 10px;
+  font-size: 12pt;
+}
+
+.solid {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  max-width: 80%;
+}
+
+#international {
+  width: 20px;
+  height: 20px;
+  accent-color: #3e4c54;
+  border: 1px solid black;
+}
+
+#favorite {
+  width: 20px;
+  height: 20px;
+  accent-color: #3e4c54;
+  border: 1px solid black;
+}
+
+.teams-container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teams-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .teams-inner-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .filter-and-sort {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

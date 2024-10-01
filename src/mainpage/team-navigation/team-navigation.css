@@ -1,0 +1,50 @@
+.team-navigation {
+  right: 10%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+  width: inherit;
+  justify-content: center;
+  margin-right: 2vw;
+}
+
+.team-navigation button {
+  border: 2px black solid;
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.team-navigation .arrow:hover {
+  cursor: pointer;
+}
+
+.team-navigation button.active,
+.team-navigation button:hover {
+  background-color: #3e4c54;
+  color: white;
+}
+
+.team-navigation button:hover:not(.active) {
+  cursor: pointer;
+}
+
+.team-navigation .dotdotdot {
+  width: 30px;
+  margin: 3px;
+  user-select: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .team-navigation {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
